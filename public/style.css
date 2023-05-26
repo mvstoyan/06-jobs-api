@@ -1,0 +1,125 @@
+body {
+    margin : 0;
+    padding : 0 20px 0 20px;
+    box-sizing : border-box;
+    font-family : 'Montserrat', sans-serif;
+}
+
+nav {
+    display : flex;
+    justify-content : space-between;
+    align-items : center;
+}
+
+#message {
+    display : flex;
+    justify-content : center;
+}
+
+form {
+    display : flex;
+    margin : 10px;
+    flex-direction : column;
+    align-items : center;
+}
+
+input {
+    margin : 10px 0 10px 0;
+    padding : 10px;
+    display : flex;
+    width : 300px;
+    justify-content : center;
+    border : #252421 dotted 0.5px;
+    background-color : rgb(234, 235, 230, 0.08);
+    box-shadow : 0 5px 5px rgb(255, 255, 255, 0.37);
+}
+
+button {
+    font-size : 16px;
+    padding : 7px 20px;
+    border-radius : 5px;
+    border : none;
+    color : #fff;
+    cursor : pointer;
+    transition : all 0.2s ease-in-out;
+    margin-top : 10px;
+    background-color : #7c7b77;
+}
+
+button:hover {
+    background-color : rgb(121, 156, 176, 0.461);
+    box-shadow : 0 5px 5px rgb(255, 255, 255, 0.37);
+}
+
+hr {
+    border : 0;
+    height : 1px;
+    background-color : #CCCCCC;
+}
+
+#jobs-message {
+    text-align : center;
+}
+
+#jobs-table {
+    width : 100%;
+    border-collapse : collapse;
+    margin-top : 2rem;
+}
+
+#jobs-table th, #jobs-table td {
+    padding : 0.5rem;
+    text-align : left;
+    border-bottom : 1px solid #CCCCCC;
+}
+
+#jobs-table-header {
+    background-color : #CCCCCC;
+}
+
+#jobs-table-header th:last-child, #jobs-table td:last-child {
+    text-align : end;
+}
+
+@media screen and (max-width: 800px) {
+    h1 {
+        font-size: 25px;
+    }
+
+    form {
+       flex-direction: row;
+       flex-wrap: wrap;
+    }
+    input {
+       margin-right: 0;
+       padding: 8px;
+    }
+    #jobs-table {
+        overflow-x: auto;
+        width: 100%;
+     }
+     #jobs-table th, #jobs-table td {
+        width: auto;
+     }
+ }
+
+ @media screen and (max-width: 400px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    button {
+        font-size : 15px;
+        padding : 5px 15px;
+        margin-top : 7px;
+    }
+
+    #jobs-table th, #jobs-table td, #jobs-table-header {
+        font-size: 13px;
+    }
+
+    .deleteButton, .editButton {
+        font-size: 10px;
+        padding : 4px 8px;
+    }
+ }
